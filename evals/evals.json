@@ -1,0 +1,111 @@
+{
+  "skill_name": "brand-guidelines",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create brand guidelines for my eco-friendly home products startup called 'Verdant'. Our target audience is environmentally conscious millennials aged 25–40. Brand personality: fresh, modern, trustworthy, warm. Mission: make sustainable living effortless. We don't have a logo yet. We'd like earthy greens and warm neutral tones. Clean sans-serif + editorial serif font combo. Channels: website, Instagram, email, product packaging.",
+      "expected_output": "A complete, fully populated brand guidelines Markdown document covering all 10 sections: Brand Foundation, Voice & Tone, Logo Usage, Color Palette (with HEX/RGB/CMYK), Typography, Imagery, Iconography, Digital Applications, Print/Packaging, and Brand Don'ts. No placeholder text. Real font names, real HEX codes, real voice examples.",
+      "assertions": [
+        {
+          "id": "has-all-sections",
+          "text": "Document contains all 10 required sections including Brand Foundation, Brand Voice & Tone, Logo Usage, Color Palette, Typography, Imagery, Iconography, Digital Applications, Print & Packaging, and Brand Don'ts",
+          "type": "content_check"
+        },
+        {
+          "id": "color-palette-complete",
+          "text": "All colors in the palette include HEX, RGB, and CMYK values",
+          "type": "content_check"
+        },
+        {
+          "id": "no-placeholders",
+          "text": "No unfilled placeholder text (e.g., '[Description]', '[HEX]', '[Font Name]') remains in the output",
+          "type": "content_check"
+        },
+        {
+          "id": "font-names-real",
+          "text": "Specific, real font names are recommended (e.g., Google Fonts) rather than generic categories",
+          "type": "content_check"
+        },
+        {
+          "id": "voice-examples-present",
+          "text": "Voice & Tone section includes actual example copy lines showing how the brand sounds in different contexts",
+          "type": "content_check"
+        },
+        {
+          "id": "wcag-mentioned",
+          "text": "WCAG accessibility standards are referenced in the color section",
+          "type": "content_check"
+        },
+        {
+          "id": "channel-specific-guidance",
+          "text": "Digital Applications section includes Instagram, website, and email specifications",
+          "type": "content_check"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I run a B2B SaaS startup called 'Nexus' that helps enterprise companies manage their data pipelines. Our audience is CTOs, data engineers, and IT directors aged 30–55. We want to feel professional, trustworthy, technically credible, but not boring or overly corporate. We have a logo (navy and electric blue wordmark). Please write our brand guidelines.",
+      "expected_output": "Complete brand guidelines tailored to B2B/enterprise SaaS: professional color palette anchored in navy and blue tones, technical but readable font recommendations, authoritative-yet-approachable voice examples, LinkedIn and website-focused digital specs, and professional print specs for sales collateral.",
+      "assertions": [
+        {
+          "id": "b2b-tone-appropriate",
+          "text": "Voice & Tone section reflects a professional B2B tone, not a consumer/casual tone",
+          "type": "content_check"
+        },
+        {
+          "id": "navy-blue-palette",
+          "text": "Color palette incorporates navy and/or blue tones consistent with the described logo",
+          "type": "content_check"
+        },
+        {
+          "id": "linkedin-included",
+          "text": "Digital Applications section includes LinkedIn specifications since this is a B2B brand",
+          "type": "content_check"
+        },
+        {
+          "id": "no-placeholders",
+          "text": "No unfilled placeholder text remains in the output",
+          "type": "content_check"
+        },
+        {
+          "id": "logo-guidelines-present",
+          "text": "Logo usage section includes clear and space rules, size minimums, and do/don't list",
+          "type": "content_check"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Help me create brand guidelines for my personal brand. I'm a freelance graphic designer named Maya Torres. I want my brand to feel bold, creative, and a little unconventional — kind of like a gallery meets a studio. My audience is creative directors and marketing managers who hire freelance designers. I love black and white with one bold accent color (I'm thinking a punchy coral or orange). Channels: portfolio website, Instagram, and PDF proposals.",
+      "expected_output": "Brand guidelines tailored to a freelance creative professional: high-contrast monochrome palette with bold accent, expressive typography choices, editorial photography direction, personal/portfolio-focused voice that conveys creative authority, and specs for portfolio website + Instagram + proposals/PDFs.",
+      "assertions": [
+        {
+          "id": "personal-brand-voice",
+          "text": "Voice & Tone section is written for a personal brand (uses 'I'/'my' framing or acknowledges individual brand context)",
+          "type": "content_check"
+        },
+        {
+          "id": "accent-color-included",
+          "text": "Color palette includes a bold accent color (coral, orange, or similar per the brief) alongside black and white",
+          "type": "content_check"
+        },
+        {
+          "id": "portfolio-channel-covered",
+          "text": "Digital Applications section includes portfolio website and PDF/proposal specifications",
+          "type": "content_check"
+        },
+        {
+          "id": "typography-expressive",
+          "text": "Typography recommendations reflect a bold/creative aesthetic (display, editorial, or expressive font choices)",
+          "type": "content_check"
+        },
+        {
+          "id": "all-sections-present",
+          "text": "Document contains all 10 required sections with no empty or skipped sections",
+          "type": "content_check"
+        }
+      ]
+    }
+  ]
+}
